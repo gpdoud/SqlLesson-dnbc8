@@ -17,7 +17,7 @@ namespace SqlLibrary {
         public Major Major { get; set; }
 
         public override string ToString() {
-            return $"{Id}|{Firstname} {Lastname}|{SAT}|{GPA}|{Major?.Description}";
+            return $"{Id}|{Firstname} {Lastname}|{SAT}|{GPA}|{MajorId}|{Major?.Description}|{Major?.MinSat}";
         }
 
         public Student() { }

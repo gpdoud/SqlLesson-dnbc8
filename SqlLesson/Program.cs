@@ -12,9 +12,12 @@ namespace SqlLesson {
             
             MajorController.bcConnection = sqllib;
 
+            var major = MajorController.GetMajorByPk(1);
+            Console.WriteLine(major);
+
             var majors = MajorController.GetAllMajors();
-            foreach(var major in majors) {
-                Console.WriteLine(major);
+            foreach(var m in majors) {
+                Console.WriteLine(m);
             }
 
 
